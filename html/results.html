@@ -85,5 +85,12 @@
         <h5>A real bad day at the office, there was no answer to the dominant display of the Computer</h5>
         <a href="/prem-quiz-24-25/">Back To Home</a>
     </div>
+    <script>
+        function setFullHeight() {
+            document.documentElement.style.setProperty('--vh', `${window.innerHeight * 0.01}px`);
+        }
+        window.addEventListener('resize', setFullHeight);
+        setFullHeight();
+    </script>
 </body>
 </html>

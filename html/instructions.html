@@ -16,5 +16,12 @@
         <br>It's you against the Computer! How will you get on?
     </p>
     <a id="start-button" href="#">Kick Off</a>
+        <script>
+        function setFullHeight() {
+            document.documentElement.style.setProperty('--vh', `${window.innerHeight * 0.01}px`);
+        }
+        window.addEventListener('resize', setFullHeight);
+        setFullHeight();
+    </script>
 </body>
 </html>

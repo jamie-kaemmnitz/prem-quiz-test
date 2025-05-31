@@ -327,5 +327,12 @@
     <footer>
         <a href="/prem-quiz-24-25/">Leave Quiz</a>
     </footer>         
+     <script>
+        function setFullHeight() {
+            document.documentElement.style.setProperty('--vh', `${window.innerHeight * 0.01}px`);
+        }
+        window.addEventListener('resize', setFullHeight);
+        setFullHeight();
+    </script>
 </body>
 </html>

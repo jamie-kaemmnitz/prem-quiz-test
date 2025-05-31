@@ -12,5 +12,12 @@
     <h3>How well do you remember the 2024/2025 season?</h3>
     <h3>Why not try this quiz and find out!</h3>
     <a href="html/instructions.html">To Warm Up</a>
+    <script>
+        function setFullHeight() {
+            document.documentElement.style.setProperty('--vh', `${window.innerHeight * 0.01}px`);
+        }
+        window.addEventListener('resize', setFullHeight);
+        setFullHeight();
+    </script>
 </body>
 </html>
